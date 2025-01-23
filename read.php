@@ -115,7 +115,7 @@ loginCheck();
   </div>
 
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBhYWr5aDp6--BOwqByO8cH2QJzYjuUWQ&callback=initMap&libraries=places"
+    src="https://maps.googleapis.com/maps/api/js?keycallback=initMap&libraries=places"
     defer></script>
   <script>
     let map;
