@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>源泉温泉検索「源泉しか勝たん」</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #008000;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    main {
+      padding: 10px 10px;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: #008000;
+      text-decoration: none;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+
+    dd {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 5px;
+      font-size: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .required {
+      color: red;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    .login-button {
+      width: 100%;
+      justify-content: center;
+      background-color: #008000;
+      color: white;
+      padding: 6px 0;
+      font-size: 0.8rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 0px;
+    }
+
+    .login-button:hover {
+      background-color: #006400;
+    }
+
+    .info-links {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .info-links p {
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .info-links a {
+      color: #008000;
+      text-decoration: none;
+    }
+
+    .info-links a:hover {
+      text-decoration: underline;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .menu a {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 6px 0;
+      background-color: white;
+      border: 2px solid #008000;
+      color: #008000;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 0.8rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+
+    a.register-button:hover {
+      background-color: #008000;
+      color: white;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+table {
+  max-width: 800px; /* 最大幅を600pxに設定 */
+  width: 100%; /* テーブルが幅に合わせて収縮 */
+  border-collapse: collapse; /* セルの間の隙間を削除 */
+  margin: auto; /* 中央に配置 */
+  font-family: Arial, sans-serif;
+  text-align: center; /* 中央寄せ */
+}
+
+th,
+td {
+  text-align: center; /* 左寄せ */
+}
+
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 0.9rem;
+      }
+
+      h4 {
+        font-size: 0.8rem;
+      }
+
+      main p {
+        font-size: 0.8rem;
+      }
+
+      a {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+      }
+
+img {
+  width: 70%;
+}
+
+table {
+  max-width: 600px; /* 最大幅を600pxに設定 */
+  width: 100%; /* テーブルが幅に合わせて収縮 */
+  border-collapse: collapse; /* セルの間の隙間を削除 */
+  margin: auto; /* 中央に配置 */
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  text-align: left; /* 左寄せ */
+}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>源泉かけ流し温泉検索「源泉しか勝たん」</h2>
+    <!-- <nav class="header-menu">
+      <a href="http://localhost/kadai/kadai10_db3/read.html">源泉検索</a>
+      <a href="http://localhost/kadai/kadai10_db3/input.html">My源泉</a>
+      <a href="http://localhost/kadai/kadai10_db3/index.html">ログイン</a>
+    </nav> -->
+  </header>
+
+  <main>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2"><h3>お気に入りの源泉かけ流し温泉をみんなでシェアしよう！</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2"><p>
+        温泉は源泉かけ流しに限る！ ということで、源泉かけ流し温泉だけを紹介するサイトです。
+        源泉かけ流しを期待して行ったのに循環・加温していた、なんて残念な経験はありませんか。
+        みんなで源泉かけ流し温泉の情報を持ち寄って共有しましょう。
+        </p></td>
+      </tr>
+    </tbody>
+  </table>
+
+    <!-- <h3>お気に入りの源泉かけ流し温泉をみんなでシェアしよう！</h3>
+    <p>温泉は源泉かけ流しに限る！ ということで、源泉かけ流し温泉だけを紹介するサイトです。<br>
+      源泉かけ流しを期待して行ったのに循環・加温していた、なんて残念な経験はありませんか。<br>
+      みんなで源泉かけ流し温泉の情報を持ち寄って共有しましょう。</p> -->
+    <div class="onsen-image">
+      <img src="img/onsen.jpg" alt="温泉のイメージ">
+    </div>
+    <h3>ログイン</h3>
+    <p>ここから先は「源泉好き」限定のコンテンツです。<br><a href="user_regist.php">新規登録はこちら。</a></p>
+    <form name="login_form" action="login_act.php" method="post">
+      <dl>
+        <dt><h4>メールアドレス<span class="required">必須</h4></span></dt>
+        <dd><h4><input type="text" name="email" maxlength="255" placeholder="メールアドレスを入力" /></h4></dd>
+        <dt><h4>パスワード<span class="required">必須</h4></span></dt>
+        <dd><h4><input type="password" name="password" maxlength="20" placeholder="パスワードを入力" /></h4></dd>
+      </dl>
+      <button class="login-button" type="submit">ログインする</button>
+    <div class="info-links">
+      <p><a href="#">パスワードを忘れた方</a></p>
+      <p><a href="#">「源泉好き」から脱退をご希望の方</a></p>
+    </div>
+    </form>
+    <div class="menu">
+      <a href="user_regist.php" class="register-button">新規登録</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 源泉かけ流し温泉検索「源泉しか勝たん」</p>
+  </footer>
+</body>
+</html>

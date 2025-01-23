@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「源泉しか勝たん」番台メニュー</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #808080;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    main {
+      padding: 10px 10px;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      background-color: #808080;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #696969;
+    }
+
+    .onsen-image {
+      margin: 20px 0;
+    }
+
+    .onsen-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      main p {
+        font-size: 0.9rem;
+      }
+
+      .menu a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>「源泉しか勝たん」番台メニュー</h1>
+  </header>
+
+  <main>
+    <p>番台メニュー：温泉情報、口コミ、ユーザー管理を行えます。</p>
+    <div class="onsen-image">
+      <img src="img/bandai.jpg" alt="番台のイメージ">
+    </div>
+    <div class="menu">
+      <a href="bandai_gensen.html">源泉情報を管理</a>
+      <a href="bandai_like_select.php">口コミを管理</a>
+      <a href="bandai_user_select.php">ユーザーを管理</a>
+      <br>
+      <a href="top_admin_menu.php">トップページに戻る</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 源泉かけ流し温泉検索「源泉しか勝たん」</p>
+  </footer>
+</body>
+</html>
